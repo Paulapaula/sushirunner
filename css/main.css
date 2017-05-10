@@ -33,7 +33,7 @@ Primary use:    MultiPurpose Template
     9.2. Menu - Media Queries    
 10. Google Map
 11. About
-    11.1. About - Various Styles
+    11.1. - Various Styles
     11.2. About - Media Queries
 12. Blog
     12.1. Blog - Various Styles
@@ -130,12 +130,12 @@ html {
    line-height: 1.4;
 }
 ::-moz-selection {
-   background: #e1560e;
+   background: #c01;
    color: #fff;
    text-shadow: none;
 }
 ::selection {
-   background: #e1560e;
+   background: #c01;
    color: #fff;
    text-shadow: none;
 }
@@ -178,7 +178,7 @@ html{
     -webkit-font-smoothing: antialiased !important;
 }
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: #73848e;
@@ -206,6 +206,7 @@ a, a:hover, a:focus{
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+	cursor: pointer;
 }
 img{
     max-width: 100%;
@@ -236,7 +237,7 @@ body.fixed-menu.frame-on .wrapper{
     padding-left: 0;
 }
 h1, h2, h3, h4, h5, h6{
-    font-family: "Palatino Linotype", Palatino, "Book Antiqua", "URW Palladio L", serif;
+    font-family: 'Inknut Antiqua', serif;
 }
 h1{
     font-size: 36px;
@@ -397,7 +398,6 @@ form button:hover{
 }
 .custom-button i{
     font-size: 1.9em;
-    margin-right: 10px;
     position: relative;
     top: 4px;
 }
@@ -538,9 +538,9 @@ form button:hover{
     font-size: 14px;
     font-weight: 700;
     color: white;
-    background: rgba(117, 168, 17, 0.9);
-    padding: 23px 70px 28px 47px;
-    border-radius: 15px;
+    background: #c01;
+    padding: 15px 25px 20px 28px;
+    border-radius: 7px;
     border: 2px solid transparent;
 }
 .custom-button.button-style9:hover{
@@ -584,7 +584,7 @@ form button:hover{
     color: white;
 }
 .section-title h1{
-    font-family: 'Great Vibes', 'Times New Roman' ,serif;
+    font-family: 'Inknut Antiqua', serif;
     font-size: 60px;
     line-height: 1.5em;
     margin-bottom: 23px;
@@ -596,9 +596,8 @@ form button:hover{
     color: #e1560e;
 }
 .section-title h3{
-    font-family: "Palatino Linotype", Palatino, "Book Antiqua", "URW Palladio L", serif;
+    font-family: 'Inknut Antiqua', serif  ;
     font-size: 24px;
-    text-transform: uppercase;
 }
 .section-title p{
     font-style: italic;
@@ -610,7 +609,7 @@ form button:hover{
 .section-title.style2 h4,
 .section-title.style2 h5,
 .section-title.style2 h6{
-    font-family: 'bebas_neue', sans-serif;
+    font-family: 'Inknut Antiqua', serif;
 }
 .section-title.style2 h1{
     font-size: 48px;
@@ -650,8 +649,7 @@ form button:hover{
 .section-title.style3 h4,
 .section-title.style3 h5,
 .section-title.style3 h6{
-    font-family: 'nevis-Bold', sans-serif;
-    text-transform: uppercase;
+    font-family: 'Inknut Antiqua', serif;
 }
 .section-title.style3 h1{
     font-size: 36px;
@@ -671,7 +669,7 @@ form button:hover{
 .white-bg .section-title.style3 h4,
 .white-bg .section-title.style3 h5,
 .white-bg .section-title.style3 h6{
-    color: #1a2328;
+    color: #000;
 }
 .white-bg .section-title.style3 p{
     color: #73848e;
@@ -682,7 +680,7 @@ form button:hover{
 .section-title.style3 h4 span,
 .section-title.style3 h5 span,
 .section-title.style3 h6 span{
-    color: #98b716;
+    color: #c01;
 }
 .align-center{
     text-align: center;
@@ -896,8 +894,8 @@ form button:hover{
     font-size: 32px;
     text-transform: uppercase;
     text-align: center;
-    color: #23292c;
-    background: #eae5d6;
+    color: #000;
+    background: #fce1c1;
     padding-top: 4px;
     float: left;
     margin-top: 9px;
@@ -1026,8 +1024,8 @@ p.big{
 ***********************************************************************************************/
 .main-nav-trigger{
     position: fixed;
-    top: 60px;
-    left: 60px;
+    top: 0px !important;
+    right: 30px !important;
     z-index: 9999;
     -webkit-transition: all 0.4s ease;
     -moz-transition:    all 0.4s ease;
@@ -1124,7 +1122,7 @@ p.big{
     color: #ff803f !important;
 }
 .main-nav ul li.organic-skin a{
-    color: #98b716 !important;
+    color: #c01 !important;
 }
 .main-nav-container a{
     color: #8a9eae;
@@ -1149,20 +1147,13 @@ p.big{
     text-align: left;
     position: relative;
 }
-.main-nav-container .main-nav ul li{
-    margin-bottom: 32px;
-    position: relative;
-}
 .main-nav-container .main-nav ul li.active a,
 .main-nav-container .main-nav ul li.current a{
     color: white;
 }
 .main-nav-container .main-nav ul li a{
     font-size: 12px;
-    text-transform: uppercase;
     display: inline-block;
-    padding-top: 10px;
-    padding-bottom: 10px;
     padding-left: 16px;
     background: url(../img/template-assets/nav-link-arrow.png) no-repeat;
     background-position: left 12px;
@@ -1268,75 +1259,6 @@ p.big{
 .main-nav-container.dark{
     background: rgba(20, 29, 34, 0.7);
 }
-.mobile-nav-container{
-    position: relative;
-    z-index: 9999;
-    display: block;
-    width: 100%;
-    padding: 15px 15px 18px;
-    background: #141d22;
-    padding-top: 20px;
-}
-.mobile-nav-container.sticky{
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(20, 29, 34, 0.7);
-}
-.mobile-nav-container .logo-container{
-    float: left;
-}
-.mobile-nav-container .main-nav-trigger{
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    left: auto;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-.mobile-nav-container .main-nav-trigger a{
-    background-size: cover;
-    padding: 0;
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    opacity: 0.8;
-}
-.mobile-nav-container .main-nav-trigger a:hover{
-    opacity: 1;
-}
-.mobile-nav-container .logo-container img{
-    /*width: 75px;*/
-}
-.mobile-nav-container .main-nav{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: block;
-    width: 100%;
-    background: rgba(20, 29, 34, 0.7);
-    text-align: center;
-    padding: 15px 0;
-    display: none;
-    border-top: 1px solid rgba(138, 158, 174, 0.15);
-}
-.mobile-nav-container .sub-menu{
-    margin-top: 0;
-}
-.mobile-nav-container .main-nav ul li a:hover,
-.mobile-nav-container .main-nav ul li.active a,
-.mobile-nav-container .main-nav ul li.current a{
-    color: white;
-}
-.mobile-nav-container .main-nav ul li a{
-    color: #8a9eae;
-    font-size: 12px;
-    text-transform: uppercase;
-    display: inline-block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
 
 /**********************************************************************************************
                                 4.1. MAIN NAV - Various Styles
@@ -1413,6 +1335,7 @@ p.big{
     transform-origin: right center;
 }
 .main-nav-trigger.style2.slide-out .handle .bar:first-child{
+	background: black;
     -webkit-transform: rotateZ(45deg) translateY(1.5px);
     -ms-transform:     rotateZ(45deg) translateY(1.5px);
     transform:         rotateZ(45deg) translateY(1.5px);
@@ -1421,6 +1344,7 @@ p.big{
     transform-origin: left center;
 }
 .main-nav-trigger.style2.slide-out .handle .bar:last-child{
+	background: black;
     -webkit-transform: rotateZ(-45deg) translateY(-1.5px);
     -ms-transform:     rotateZ(-45deg) translateY(-1.5px);
     transform:         rotateZ(-45deg) translateY(-1.5px);
@@ -1462,7 +1386,8 @@ p.big{
     padding-top: 117px;
     padding-right: 0;
     padding-left: 0;
-    background: rgba(68, 102, 82, 0.9);
+    background: rgba(0, 0, 0, 0.9);
+    background: url(../img/custom-bg/navbar.jpg);
     opacity: 0;
     visibility: hidden;
     -webkit-transform: translateX(0) translateY(-50%);
@@ -1502,19 +1427,15 @@ p.big{
     text-align: center;
     padding-left: 0;
 }
-.main-nav-container.style3 .main-nav li,
-.main-nav-container.style4 .main-nav li{
-    margin-bottom: 23px;
-}
 .main-nav-container.style4 .main-nav .sub-menu{
     margin-top: 22px;
 }
 .main-nav-container.style3 .main-nav li a,
 .main-nav-container.style4 .main-nav li a{
-    font-family: 'nevis-Bold', sans-serif;
+    font-family: 'Inknut Antiqua', serif;
     font-size: 24px;
     line-height: 42px;
-    color: white;
+    color: black;
     background: none;
     padding-left: 0;
 }
@@ -1526,7 +1447,7 @@ p.big{
 }
 .main-nav-container.style3 .main-nav li.active a,
 .main-nav-container.style3 .main-nav li a:hover{
-    color: #aaebc4;
+    color: #c01;
 }
 .main-nav-container.style4 .main-nav li.active a,
 .main-nav-container.style4 .main-nav li a:hover{
@@ -1642,7 +1563,7 @@ p.big{
     border-bottom-color: #ff803f;
 }
 .main-nav-container.horizontal .main-nav li.organic-skin:hover a{
-    border-bottom-color: #98b716;
+    border-bottom-color: #c01;
 }
 .main-nav-container.horizontal + .wrapper .main-header .top-banner-container{
     height: 700px;
@@ -1670,6 +1591,7 @@ p.big{
       padding: 57px 48px;
     }
 }
+
 @media screen and (min-width: 1200px) and (max-width: 1600px){
 
     .main-nav-container.horizontal .contact-info{
@@ -1702,22 +1624,30 @@ p.big{
         padding-top: 18px;
     }
 }
+
 @media (min-width: 992px){
 
-    .mobile-nav-container{
-        display: none;
-    }
-}
-@media (max-width: 991px){
-    
-    .main-nav-trigger:not(.mobile-nav-trigger){
-        display: none;
-    }
-    .main-nav-container{
+	.main-nav-trigger{
         display: none;
     }
 }
 
+@media (max-width: 991px){
+
+    .main-nav-container{
+        display: block;
+    }
+	
+	.main-nav-trigger{
+        display: block;
+    }
+	#navigation,#navigation-sticky-wrapper{
+        display: none;
+    }
+}
+.navbar {
+    border-radius: 0px !important;
+}
 /**********************************************************************************************
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
                                         5. MAIN HEADER 
@@ -2269,7 +2199,7 @@ p.big{
 .gallery.style3 .gallery-items-container li .overlay .overlay-details .price{
     font-size: 72px;
     line-height: 1;
-    color: #98b716;
+    color: #c01;
     margin-top: 16px;
 }
 .gallery.style3 .gallery-items-container li .overlay .overlay-details .price sup{
@@ -2353,7 +2283,7 @@ p.big{
     text-align: center;
 }
 .services .service figure{
-    margin-bottom: 46px;
+    margin-bottom: 20px;
 }
 .services .service h2{
     font-size: 30px;
@@ -2391,10 +2321,9 @@ p.big{
     margin-bottom: 30px;
 }
 .services.style3 .service h2{
-    font-family: 'nevis-Bold', sans-serif;
+    font-family: 'Inknut Antiqua', serif;;
     font-size: 24px;
-    text-transform: uppercase;
-    color: #91a831;
+    color: #c01;
 }
 .services.style3.dark-bg .service p{
     color: white;
@@ -2417,9 +2346,6 @@ p.big{
 ***********************************************************************************************/
 .menus{
     padding-top: 75px;
-}
-.menus .section-title{
-    margin-bottom: 100px;
 }
 .menus .menus-container{
     position: relative;
@@ -2501,7 +2427,7 @@ p.big{
     background: url(../img/template-assets/dots.png) left 14px repeat-x;
 }
 .menus.white-bg .menu .food .food-desc .dots{
-    background: url(../img/template-assets/dots-dark.png) left 14px repeat-x;
+    background: url(../img/template-assets/dots-dark.png) left bottom 14px repeat-x;
 }
 .menus-full{
     padding-top: 0;
@@ -2526,12 +2452,31 @@ p.big{
     width: 60%;
 }
 .menus-full .right-section{
-    padding-top: 86px;
-    background: white;
-    width: 40%;
-    position: absolute;
-    top: 0;
-    right: 0;
+	padding: 20px;
+    padding-top: 60px;
+    background: transparent;
+    width: 300px;
+	height: 360px;
+	border: solid 1px;
+    top: 35px !important;
+    right: 70px;
+	background: #f5f5f5;
+}
+.menus-full .right-section:after{
+	content: '';
+	display: block;
+	width: 212px;
+	height: 212px;
+	-ms-transform: scaleY(0.3) rotate(45deg); /* IE 9 */
+    -webkit-transform: scaleY(0.3) rotate(45deg); /* Chrome, Safari, Opera */
+    transform: scaleY(0.3) rotate(45deg);
+	background: red;
+	position:relative;
+	right:-23px;
+	top: 193px;
+	border-left: solid 1px;
+	border-top: solid 1px;
+	background: white;
 }
 .menus-full .left-section .menus-container{
     padding-right: 50px;
@@ -2544,7 +2489,7 @@ p.big{
 }
 .menus-full .menu .section-title{
     text-align: left;
-    margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 .menus-full .menu .section-title p,
 .menus-full .menu .section-title h1{
@@ -2556,16 +2501,13 @@ p.big{
 }
 .menus-full .menu .section-title p{
     color: #73848e;
-    margin-top: -6px;
+    margin-top: 10px;
 }
 .menus-full .menu .food{
     color: #23292c;
 }
 .menus-full .menu .food .food-desc .dots{
     background: url(../img/template-assets/dots-dark.png) left 14px repeat-x;
-}
-.menus-full .menu-meals-container{
-    padding-left: 70px;
 }
 .menus-full .menu-meals-container ul{
     width: 315px;
@@ -2604,8 +2546,7 @@ p.big{
 }
 .menus-full .menu-meals-container ul li h3{
     margin-top: 10px;
-    margin-bottom: 6px;
-    color: #23292c;
+    color: #c01;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -2694,12 +2635,6 @@ p.big{
     color: #bd8c60;
 }
 
-.menus-full.style3 {
-    background: #f8ffee;
-}
-.menus-full.style3 .section-title{
-    margin-bottom: 56px;
-}
 .menus-full.style3 .section-title h1{
     margin-bottom: 13px;
 }
@@ -2721,10 +2656,6 @@ p.big{
 }
 .menus.style3{
     padding-top: 90px;
-    padding-bottom: 130px;
-}
-.menus.style3 .section-title{
-    margin-bottom: 53px;
 }
 .menus.style3 .menu-carousel-nav{
     display: none;
@@ -2749,7 +2680,8 @@ p.big{
     display: table-cell;
 }
 .menus.style3 .menu .food .food-price{
-    color: #98b716;
+    color: #c01;
+	vertical-align: bottom;
 }
 .menus.style3 .menu .food .dots{
     position: relative;
@@ -2769,7 +2701,7 @@ p.big{
 /**********************************************************************************************
                                     9.2. MENU - Media Queries
 ***********************************************************************************************/
-@media (max-width: 1199px){
+@media (max-width: 991px){
 
     .menus-full .left-section{
         width: 100%;
@@ -2785,6 +2717,9 @@ p.big{
         right: auto;
         display: none;
     }
+	.menus.style3 {
+    	padding-top: 110px;
+	}
 }
 @media (max-width: 767px){
 
@@ -2799,7 +2734,6 @@ p.big{
         margin: 0 22px;
     }
 }
-
 
 /**********************************************************************************************
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2863,7 +2797,7 @@ p.big{
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ***********************************************************************************************/
 .about{
-    background: #23292c;
+    background: black;
     padding-top: 78px;
     padding-bottom: 0;
     overflow: hidden;
@@ -2872,7 +2806,7 @@ p.big{
     margin-bottom: 55px;
 }
 .about .about-container{
-    margin-bottom: 110px;
+    margin-bottom: 50px;
 }
 .about .about-container p{
     color: #9da7ac;
@@ -2908,8 +2842,8 @@ p.big{
     text-transform: none;
 }
 .about .promo{
-    background: #eae5d6;
-    color: #23292c;
+    background: #fce1c1;
+    color: #000;
     text-align: center;
     padding-top: 60px;
     padding-bottom: 70px;
@@ -2923,7 +2857,6 @@ p.big{
     color: #e15a16;
 }
 .about .promo.style2{
-    background-image: url(../img/custom-bg/custom-bg37.jpg);
     padding-top: 84px;
     padding-bottom: 80px;
 }
@@ -2932,11 +2865,10 @@ p.big{
     font-size: 24px;
     letter-spacing: 2px;
     font-style: normal;
-    color: white;
     text-transform: uppercase;
 }
 .about .promo.style2 p span{
-    color: #98b716;
+    color: #c01;
 }
 .about .about-top{
     background: #fcfbf2;
@@ -2952,10 +2884,9 @@ p.big{
     margin-bottom: 72px;
 }
 .about .about-top h4{
-    font-family: "Palatino Linotype", Palatino, "Book Antiqua", "URW Palladio L", serif;
+    font-family: 'Inknut Antiqua', serif;
     font-size: 24px;
     line-height: 30px;
-    text-transform: uppercase;
     margin-bottom: 31px;
 }
 .about .about-top p{
@@ -3037,10 +2968,9 @@ p.big{
     color: #23323a;
 }
 .latest-post .blog-post article header h1{
-    font-family: "Palatino Linotype", Palatino, "Book Antiqua", "URW Palladio L", serif;
+    font-family: 'Inknut Antiqua', serif;
     font-size: 30px;
     line-height: 1.2em;
-    text-transform: uppercase;
     margin-bottom: 18px;
 }
 .latest-post .blog-post article header h1 a{
@@ -3184,10 +3114,9 @@ p.big{
     margin-bottom: 27px;
 }
 .blog-single-page .blog-post article .post-contents .recipe-container .recipe-title{
-    font-family: "Palatino Linotype", Palatino, "Book Antiqua", "URW Palladio L", serif;
+    font-family: 'Inknut Antiqua', serif;
     font-size: 24px;
     color: #eae5d6;
-    text-transform: uppercase;
     margin-bottom: 35px;
 }
 .blog-single-page .blog-post article .post-contents .recipe-container ul{
@@ -3248,9 +3177,8 @@ p.big{
     margin-bottom: 50px;
 }
 .blog-single-page .blog-post article .related-posts-container article h4{
-    font-family: "Palatino Linotype", Palatino, "Book Antiqua", "URW Palladio L", serif;
+    font-family: 'Inknut Antiqua', serif;
     font-size: 18px;
-    text-transform: uppercase;
     margin-bottom: 8px;
 }
 .blog-single-page .blog-post article .related-posts-container article h4 a:hover{
@@ -3270,9 +3198,8 @@ p.big{
     margin-bottom: 46px;
 }
 .blog-single-page .blog-post article .tags-container h6{
-    font-family: "Palatino Linotype", Palatino, "Book Antiqua", "URW Palladio L", serif;
+    font-family: 'Inknut Antiqua', serif;
     font-size: 12px;
-    text-transform: uppercase;
     display: inline-block;
     color: #23323a;
 }
@@ -3648,7 +3575,7 @@ p.big{
     margin-bottom: 20px;
 }
 .latest-post.style3 .blog-post article header .post-meta a{
-    color: #98b716;
+    color: #c01;
 }
 .latest-post.style3 .blog-post article header h1{
     font-family: 'nevis-Bold', sans-serif;
@@ -3660,7 +3587,7 @@ p.big{
     color: #23323a;
 }
 .latest-post.style3 .blog-post article header h1 a:hover{
-    color: #98b716;
+    color: #c01;
 }
 .latest-post.style3 .blog-post article header .socials-container{
     margin-bottom: 20px;
@@ -3669,10 +3596,10 @@ p.big{
     margin: 10px 12px;
 }
 .latest-post.style3 .blog-post article header .socials-container ul li a:hover{
-    color: #98b716;
+    color: #c01;
 }
 .latest-post.style3 .blog-post article .post-contents a.read-more-button{
-    color: #98b716;
+    color: #c01;
 }
 .latest-post.style3 .blog-post-container .load-more{
     border-top: 4px solid #e9eced;
@@ -4267,6 +4194,9 @@ p.big{
     color: #e1560e;
     margin-bottom: 22px;
 }
+.food-banner .banner .banner-features .food-price.first{
+    margin-bottom: 0px;
+}
 .food-banner .banner .banner-features .food-price p{
     font-family: "Palatino Linotype", Palatino, "Book Antiqua", "URW Palladio L", serif;
     font-size: 60px;
@@ -4292,6 +4222,10 @@ p.big{
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     transform: translateX(-50%);
+}
+.food-banner .banner .banner-features .food-price p.small:after,
+.food-banner .banner .banner-features .food-price p.small:before{
+    content: none;
 }
 .food-banner .banner .banner-features .food-price p:after{
     bottom: -3px;
@@ -5244,9 +5178,11 @@ table.order-table tbody td.total{
     color: white;
     margin-bottom: 20px;
 }
+.food-banner.style3 .banner .banner-features .food-price.first{
+    margin-bottom: 0px;
+}
 .food-banner.style3 .banner .banner-features .food-price p{
     font-family: 'nevis-Bold', sans-serif;
-    color: #f8ffee;
     padding-bottom: 0;
 }
 .food-banner.style3 .banner .banner-features .food-price p:before,
@@ -5254,11 +5190,11 @@ table.order-table tbody td.total{
     background: rgba(255, 255, 255, 0.5);
 }
 .food-banner.style3 .banner .banner-features ul li{
-    margin-bottom: 17px;
+    margin-bottom: 10px;
 }
 .food-banner.style3 .banner .banner-features ul li h6,
 .food-banner.style3 .banner .banner-features ul li p{
-    color: #fcfbf2;
+    color: #fce1c1;
 }
 .food-banner.style3 .banner .banner-features ul li h6{
     font-family: 'nevis-Bold', sans-serif;
@@ -5767,9 +5703,6 @@ table.order-table tbody td.total{
 .reservation .reservation-form button{
     border: none;
 }
-.reservation .reservation-by-phone .contact-info{
-    margin-bottom: 40px;
-}
 .reservation .reservation-by-phone .contact-info figure{
     float: left;
     margin-right: 20px;
@@ -5792,7 +5725,7 @@ table.order-table tbody td.total{
     color: #9da7ac;
 }
 .reservation .reservation-by-phone .contact-info .phone-number span{
-    color: #e46928;
+    color: #c01;
 }
 .reservation-terms{
     background: #23292c;
@@ -5830,10 +5763,10 @@ table.order-table tbody td.total{
     color: #23292c;
 }
 .reservation.style3 .section-title{
-    margin-bottom: 74px;
+    margin-bottom: 20px;
 }
 .reservation.style3 .reservation-by-phone .contact-info .phone-number span{
-    color: #a0bd31;
+    color: #c01;
 }
 .reservation-terms.style3{
     background: #f8ffee;
@@ -5880,7 +5813,7 @@ table.order-table tbody td.total{
     margin-bottom: 60px;
 }
 .events.dark-bg .event-container h4{
-    font-family: "Palatino Linotype", Palatino, "Book Antiqua", "URW Palladio L", serif;
+    font-family: 'Inknut Antiqua', serif;
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
@@ -5984,7 +5917,7 @@ table.order-table tbody td.total{
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ***********************************************************************************************/
 .double-view{
-    background: #1a2328;
+    background: #000;
     position: relative;
     overflow: hidden;
     padding: 0;
@@ -6063,7 +5996,7 @@ table.order-table tbody td.total{
 .main-recipes{
     padding-top: 30px;
     padding-bottom: 0;
-    background: #1a2328;
+    background: #000;
 }
 .main-recipes .recipe{
     text-align: center;
@@ -6130,8 +6063,6 @@ table.order-table tbody td.total{
 .main-footer{
     background: #23292c;
     color: #73848e;
-    padding-top: 65px;
-    padding-bottom: 35px;
 }
 .main-footer .logo-container{
     margin-bottom: 49px;
@@ -6243,7 +6174,7 @@ table.order-table tbody td.total{
     margin-top: 35px;
 }
 .main-footer .bottom-bar{
-    background: #23292c;
+    background: #000;
     padding-top: 59px;
     padding-bottom: 47px;
 }
@@ -6411,7 +6342,6 @@ table.order-table tbody td.total{
     margin-bottom: 65px;
 }
 .main-footer.style3 .bottom-bar{
-    margin-top: 120px;
     padding-bottom: 59px;
 }
 
@@ -6741,6 +6671,39 @@ table.order-table tbody td.total{
     h3 {
         page-break-after: avoid;
     }
+	
+	.food-banner {
+		width: 45%;
+		display: inline-block;
+		height: 580px;
+		border: dashed 1px grey;
+		padding-top: 10px;
+	}
+	.food-banner .banner {
+		border: none !important;
+		padding-top: 0px;
+	}
+	.image-container, image-container img {
+		padding-top: 0px;
+		height: 250px;
+		
+	}
+	.image-container img {
+		width: 100%;
+		height: 100%;
+		border: solid 1px grey;
+		
+	}
+	.banner-features {
+		border: solid 1px grey;
+		height: 300px !important;
+	}
+	.bottom-bar .links, .socials-container {
+		display: none;
+	}
+	.bottom-bar a {
+		color: transparent !important;
+	}
 }
 /**********************************************************************************************
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -6837,6 +6800,7 @@ table.order-table tbody td.total{
 .m-b-300{margin-bottom: 300px;}
 
 /* Custom Padding top */
+.p-t-0{padding-top: 0px;}
 .p-t-5{padding-top: 5px;}
 .p-t-10{padding-top: 10px;}
 .p-t-15{padding-top: 15px;}
@@ -6919,3 +6883,192 @@ table.order-table tbody td.total{
 .p-b-280{padding-bottom: 280px;}
 .p-b-290{padding-bottom: 290px;}
 .p-b-300{padding-bottom: 300px;}
+
+
+/**********************************************************************************************
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                                    Sushi Custom
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+***********************************************************************************************/
+
+#navigation {
+	z-index:99;
+	width:100%;
+	height:85px;
+}
+
+.navbar-default {
+	height: 82;
+	border-bottom: solid 3px #c01;
+	background: url(../img/custom-bg/navbar.jpg);
+}
+ul.nav.navbar-nav.navbar-right {
+    padding-top: 14px;
+}
+
+nav ul li a.active {
+	color: #c01 !important;
+}
+
+.bottom-bar .links {
+	font-size: 10pt;
+}
+
+.bottom-bar .links a {
+	color: #73848e;
+}
+
+.bottom-bar .copyright {
+	margin-top: 10px !important;
+	font-size: 9pt;
+}
+
+ul.list {
+	margin-left: 50px;
+	margin-top: 20px;
+	list-style: disc;
+}
+
+ul.list li{
+	margin-bottom: 15px;
+}
+
+.about.light-bg {
+	background: white;
+}
+
+.about.light-bg h2{
+	font-family: 'nevis-Bold', sans-serif;
+	color: #000;
+	font-size: 18pt;
+	line-height: 40pt;
+}
+
+.e404 h1.title {
+	font-size: 90pt;
+}
+.e404 h1.title a:hover {
+	color: #c01;
+}
+.e404 h1.title img {
+	height: 100px;
+	vertical-align: inherit;
+}
+
+.food-banner.dark-bg {
+	background: #fff;
+}
+
+.food-banner.light-bg {
+	background: #fff;
+}
+
+.food-price .small {
+	font-size: 25pt !important;
+	border-bottom: none !important;
+}
+
+.food-price h6 {
+	font-family: 'nevis-Bold', sans-serif;
+}
+
+.food-banner {
+	border-bottom: 1px dashed;
+}
+
+.food-banner:last-of-type {
+	border-bottom: none;
+}
+
+.food-banner .banner {
+	border: 1px dashed;
+}
+
+.menus .section-title h1 {
+	border-bottom: solid 3px lightgrey;
+}
+
+.catering-nav {
+	text-align: center;
+	padding: 10px;
+	padding-right: 65px !important;
+	border-bottom: solid 3px #c01;
+    background: url(../img/custom-bg/navbar.jpg);
+	position: fixed !important;
+	top:0 !important;
+	z-index: 99;
+    width: calc(100% + 15px);
+	display: none;
+}
+
+.catering-nav h3 {
+	font-size: 12pt;
+}
+.catering-nav figure{
+	margin-bottom: 10px;
+	height: 40px !important;
+}
+.catering-nav figure img {
+	height: 40px;
+}
+.service figure{
+	position: relative;
+	top: 0px;
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.menu-meals figure{
+	position: relative;
+	left: 0px;
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-meals a:hover figure{
+	left: -10px;
+}
+.service:hover figure{
+	top: -10px;
+}
+
+.separator {
+	border-bottom: solid 3px lightgrey;
+	margin-top: 25px !important;
+	margin-bottom: 25px !important;
+}
+.submit-container {
+	text-align: right;
+}
+
+.alert-danger {
+	background-image: -webkit-linear-gradient(top,#f2dede 0,#e7c3c3 100%);
+    background-image: -o-linear-gradient(top,#f2dede 0,#e7c3c3 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f2dede),to(#e7c3c3));
+    background-image: linear-gradient(to bottom,#f2dede 0,#e7c3c3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffe7c3c3', GradientType=0);
+    background-repeat: repeat-x;
+    border-color: #dca7a7;
+	text-shadow: 0 1px 0 rgba(255,255,255,.2);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 1px 2px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 1px 2px rgba(0,0,0,.05);
+	padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+	color: #a94442;
+    background-color: #f2dede;
+	font-size: 10pt;
+}
+@media (min-width: 768px){
+	.reservation-by-phone:first-of-type {
+		padding-top: 70px;
+	}
+}
+
+@media (max-width: 991px){
+	.catering-nav {
+		display: block;
+	}
+}

@@ -29,6 +29,26 @@
 		_windowST = $window.scrollTop();		
 	});
 
+		$(window).load(function(){
+	  	$("#navigation").sticky({ topSpacing: 0 });
+	});
+
+	$('ul.nav li.dropdown').hover(function() {
+	  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+	}, function() {
+	  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+	});	
+
+	
+	//jQuery to collapse the navbar on scroll
+	$(window).scroll(function() {
+		if ($(".navbar").offset().top > 82) {
+			$(".navbar-fixed-top").addClass("top-nav-collapse");
+		} else {
+			$(".navbar-fixed-top").removeClass("top-nav-collapse");
+		}
+	});
+	
 	$document.ready(function() {
 		/*------------------------------------------
 		SHOW THE DOCUMENT
@@ -45,8 +65,6 @@
 
 		navTrigger(); // Enable main nav trigger
 
-		mobileNav(); // Enable mobile nav
-
 		tweets(); // Enable Twitter
 
 		teamCarousel(); // Enable team carousel
@@ -54,8 +72,6 @@
 		galleryStyle1(); // Enable gallery style 1
 
 		galleryStyle2(); // Enable gallery style 2
-
-		menuMeals(); // Enable menu meals
 
 		contactForm(); // Enable contact form
 
@@ -69,7 +85,6 @@
 
 		itemSlideshow(); // Enable item slideshow
 
-		mobileNavStickyInit(); // Enable sticky mobile nav
 
 		doubleView(); // Enable double view
 
@@ -157,25 +172,6 @@
 				$('body, html').toggleClass('menu-opened');
 			});
 		};
-	};
-
-	/*-----------------------------------------
-	MOBILE NAV INIT
-	------------------------------------------*/
-	function mobileNav(){
-		var mobileNavContainer = $('.mobile-nav-container'),
-			mainNavContainer = $('.main-nav-container'),
-			navTrigger = $('.mobile-nav-trigger');
-
-		if ( !mobileNavContainer.find('.logo-container').length ) {
-			mainNavContainer.find('.logo-container').clone().appendTo(mobileNavContainer);
-		};
-		mainNavContainer.find('.main-nav').clone().appendTo(mobileNavContainer);
-
-		navTrigger.on('click', function(event) {
-			event.preventDefault();
-			$(this).siblings('.main-nav').slideToggle();
-		});
 	};
 
 	/*-----------------------------------------
@@ -329,32 +325,6 @@
 		})
 	};
 
-	function menuMeals(){
-		
-		var menuCarousel = $('.menus').not('.style3').find('.menu-carousel');
-		if ( $('.menu-meals').length ) {
-			var menuMeals = $('.menu-meals'),
-				menuMealsThumbnail = menuMeals.owlCarousel({
-				items: 1,
-				singleItem: true,
-				mouseDrag: false,
-				touchDrag: false
-			});
-
-			menuMeals.find('.owl-item').on('click', function(event) {
-				var $this = $(this);
-				$this.addClass('active').siblings().removeClass('active');
-				menuCarousel.trigger('to.owl.carousel', $this.index());
-			});
-
-			menuCarousel.on('changed.owl.carousel', function(event) {
-				var activeMenu = event.item.index;
-				console.log(activeMenu);
-				menuMeals.find('.owl-item:nth-child('+ (activeMenu + 1) + ')' ).addClass('active').siblings().removeClass('active')
-			});
-
-		};
-	};
 
 	/*-----------------------------------------
 	CONTACT FORM INIT
@@ -659,36 +629,6 @@
 		};
 	};
 
-	/*------------------------------------------
-	MOBILE NAV STICKY INIT
-	------------------------------------------*/
-	function mobileNavStickyInit(){
-		var mobileNavContainer = $('.mobile-nav-container'),
-			mobileNavHeight = mobileNavContainer.outerHeight(),
-			wrapper = $('.wrapper');
-
-		$('.main-header .logo-container').imagesLoaded(function(){
-			$window.on('scroll', function(){
-				//The window.requestAnimationFrame() method tells the browser that you wish to perform an animation- the browser can optimize it so animations will be smoother
-				// window.requestAnimationFrame(mobileNav);
-			});
-		});
-
-		function mobileNav(){
-
-			if ( _windowST > mobileNavHeight && _windowW <= 991 ) {
-				$('.mobile-nav-container').addClass('sticky animated fadeInDown');
-				wrapper.css('padding-top', mobileNavHeight);
-			} else {
-				$('.mobile-nav-container').removeClass('sticky animated fadeInDown');
-				if ($('.frame-on').length && _windowW >= 992) {
-					wrapper.css('padding-top', '1.8%');
-				} else{
-					wrapper.css('padding-top', 0);
-				}
-			};
-		};
-	};
 
 	/*------------------------------------------
 	FOOTER STYLE 2
@@ -796,8 +736,6 @@
     -------------------------------------------------------------*/
     $window.on('resize', function() {
 
-    	mobileNavStickyInit();
-
     	doubleView();
 		
 		if ( $('.main-footer.style2').length ) {
@@ -805,5 +743,34 @@
 		};
     });
 
-
+	
+	//jQuery for page scrolling feature - requires jQuery Easing plugin
+	$(function() {
+		$('.menu-meals a').bind('click', function(event) {
+			
+			var $anchor = $(this);
+			var nav = $($anchor.attr('href'));
+			if (nav.length) {
+			$('html, body').stop().animate({				
+				scrollTop: $($anchor.attr('href')).offset().top - 98		
+			}, 1500, 'easeInOutExpo');
+			
+			event.preventDefault();
+			}
+		});
+		
+		$('a.custom-button').bind('click', function(event) {
+			
+			var $anchor = $(this);
+			var nav = $($anchor.attr('href'));
+			if (nav.length) {
+			$('html, body').stop().animate({				
+				scrollTop: $($anchor.attr('href')).offset().top - 80		
+			}, 1500, 'easeInOutExpo');
+			
+			event.preventDefault();
+			}
+		});
+		
+	});
 })();
