@@ -10,14 +10,14 @@ include('partials/header.php');
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
 				<header class="section-title style3 wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
-					<h1><span>Menu</span></h1>
+					<h1><span><?php echo __('menu',$lang) ?></span></h1>
 				</header>
 			</div><!-- /col-md-6 -->
 			<div class="about-container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
 						<div id="locations" class="wow fadeInUp animated">
-							<h1 class="select-location">Select a Location</h1>
+							<h1 class="select-location"><?php echo __('select-location',$lang) ?></h1>
 							<a class="location" href="https://opendining.net/menu/586d63104f5ee997751e70bb?from_locations=1&appid=58f6cbb84f5ee9bf35fe5a0c">
 							<h3>Sushi Runner - Miami Lakes</h3>
 							<div>16010 NW 57th Ave<br/>

@@ -20,14 +20,8 @@ include('partials/header.php');
 							</div><!-- /food-price -->
 							<ul>
 								<li>
-									<h6>ENTIRE DINING CHECK</h6>
-									<p>Monday to friday 50% off on your entire dine&#8209;in check only.</p>
-								</li>
-								<li>
-									<p>Valid from 4:30pm to 7:30 pm not valid with any other offers, discount, coupons, or lunch special menu. Discount has not cash value, this offer is not available for online ordering.</p>
-								</li>
-								<li>
-									<p>Customer is responsible for all applicable taxes due on the free item.</p>
+									<h6><?php echo __('promo-1-title',$lang) ?></h6>
+									<p><?php echo __('promo-1-desc',$lang) ?></p>
 								</li>
 							</ul>
 						</div><!-- /banner-features-inner -->
@@ -58,14 +52,8 @@ include('partials/header.php');
 							</div>
 							<ul>
 								<li>
-									<h6>BUY TWO ROLLS FOR $15</h6>
-									<p>Not valid with any other offers, discount, coupons, or lunch special menu.</p>
-								</li>
-								<li>
-									<p>This offer is not available for online ordering. customer is responsible for all applicable taxes.</p>
-								</li>
-								<li>
-									<p>You should ask for monthly special rolls, the restaurant is responsible to select the monthly rolls.</p>
+									<h6><?php echo __('promo-2-title',$lang) ?></h6>
+									<p><?php echo __('promo-2-desc',$lang) ?></p>
 								</li>
 							</ul>
 						</div><!-- /banner-features-inner -->
@@ -93,8 +81,8 @@ include('partials/header.php');
 							</div><!-- /food-price -->
 							<ul>
 								<li>
-									<h6>ENTIRE ONLINE CHECK</h6>
-									<p>20% off on your entire online check.</p>
+									<h6><?php echo __('promo-3-title',$lang) ?>ENTIRE ONLINE CHECK</h6>
+									<p><?php echo __('promo-2-desc',$lang) ?>20% off on your entire online check.</p>
 								</li>
 								<li>
 									<p>valid online ordering only, not valid with any other offers, discount, coupons, or lunch special menu discount has not cash value.</p>

@@ -5,12 +5,12 @@
                         <div class="row">
                             <div class="col-md-4 align-left">
                                 <p class="links">
-									<a href="about-us.php">About us</a> | 
-									<a href="privacy-policy.php">Privacy Policy</a> | 
-									<a href="general-terms.php">General Terms</a><br>
-									<a href="employements.php">Employments</a> | 
-									<a href="#">Marketing materials</a></p>
-                                <p class="copyright">© 2017 Sushi Runner. All Rights Reserved
+									<a href="about-us.php"><?php echo __('about-us',$lang) ?></a> | 
+									<a href="privacy-policy.php"><?php echo __('privacy-policy',$lang) ?></a> | 
+									<a href="general-terms.php"><?php echo __('general-terms',$lang) ?></a><br>
+									<a href="employements.php"><?php echo __('employements',$lang) ?></a> | 
+									<a href="#"><?php echo __('marketing-materials',$lang) ?></a></p>
+                                <p class="copyright">© 2017 <?php echo __('sushirunner',$lang) . '. ' . __('rights-reserved',$lang) ?>
                                 </p>
                             </div><!-- /col-md-4 -->
                             <div class="col-md-4 align-center">

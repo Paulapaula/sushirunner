@@ -1,3 +1,5 @@
+<?php require('languages/function.php'); ?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -8,13 +10,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title><?php
 		
-		if ($title == 'Sushi Runner'){
+		if ($title == __('sushirunner',$lang)){
 			
 			echo $title;
 
 		} else {
 			
-			echo $title . " | Sushi Runner";
+			echo $title . " | " . __('sushirunner',$lang);
 		}
 		
 		?></title>
@@ -52,7 +54,9 @@
 
 	<!-- Head JS Libraries -->
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
-	<script src="http://maps.google.com/maps/api/js"></script><!-- REQUIRED FOR GOOGLE MAP -->
+	<script src="http://maps.google.com/maps/api/js"></script>
+	
+	<!-- REQUIRED FOR GOOGLE MAP -->
 </head>
 <body data-spy="scroll" data-offset="58">
 	<!--[if lt IE 7]>
@@ -99,7 +103,7 @@
 			  <?php 
 				
 				$menu = '';
-				$tabs = ['Menu','Locations','Specials','Catering','Franchise','Contact'];
+				$tabs = ['menu','locations','specials','catering','franchise','contact'];
 					
 				for($i=0;$i < count($tabs); $i++){
 					
@@ -110,9 +114,14 @@
 						$menu .= ' class="active"';
 					}
 					
-					$menu .= '>'. $tabs[$i].'</a></li>';
+					$menu .= '>'. __($tabs[$i],$lang).'</a></li>';
 				}
 				
+				if($lang == 'en'){$langOp = 'es';}
+				if($lang == 'es'){$langOp = 'en';}
+				  
+				$menu .= '<li><a href="?lang=' . $langOp . '">' . strtoupper($langOp) . '</a></li>';
+				  
 				echo $menu;
 				  
 			   ?>
@@ -124,7 +133,7 @@
 	<!-- Start wrapper -->
 	<div class="wrapper">
 
-	<?php if($title == 'Sushi Runner'){ ?>
+	<?php if($title == __('sushirunner',$lang)){ ?>
 	<!-- Start main-header -->
 	
 	<header class="main-header slider-on" id="top">

@@ -295,7 +295,7 @@ include('partials/header.php');
                             <div class="menu-carousel-nav"></div>
                         </div><!-- /menus-container -->
                     </div><!-- /left-section -->
-                    <div class="right-section" style="position:fixed;top:86px">
+                    <div class="right-section wow fadeInDown animated" style="position:fixed;top:86px">
                         <div class="col-md-4 menu-meals-container">
                             <ul class="menu-meals">
                                 <li> <a href="#sushi">
