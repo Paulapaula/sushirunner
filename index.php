@@ -5,6 +5,18 @@ include('partials/header.php')
 
 ?>
 
+<section class="promo-video style3 wow fadeInDown">
+                <div class="container">
+                    <div class="row">
+                       <div class="col-md-8 col-md-offset-2">
+                        <div class="embed-responsive embed-responsive-16by9 img-rounded">
+                        	<iframe width="100%" height="388" src="//www.youtube.com/embed/oolJWcOhHCw?badge=0&amp;autoplay=0&amp;html5=1&amp;rel=0" frameborder="0" allowfullscreen="" class="embed-responsive-item"></iframe>
+                       </div>
+                       </div>
+                    </div><!-- /row -->
+                </div><!-- /container -->
+            </section>
+
 <section class="services style3 light-bg" id="our-catering">
 	<div class="parallax-bg" data-stellar-background-ratio="0.7"></div>
 	<div class="container">
@@ -20,7 +32,7 @@ include('partials/header.php')
 					<div class="col-lg-3 col-sm-6 wow fadeInDown">
 						<a href="catering.php#sushi">
 						<div class="service">
-							<figure><img src="img/services/service8.png" alt="Marine Food Services"></figure>
+							<figure><img src="img/services/service7.png" alt="Sushi Icon"></figure>
 							<h2>Sushi</h2>
 							<p>Lorem ipsum dolor sit amet, tetur piscing elit. Suspendisse smod congue bibendum. </p>
 						</div>
@@ -29,7 +41,7 @@ include('partials/header.php')
 					<div class="col-lg-3 col-sm-6 wow fadeInDown" data-wow-delay="0.2s">
 						<a href="catering.php#sashimi">
 						<div class="service">
-							<figure><img src="img/services/service7.png" alt="Marine Food Services"></figure>
+							<figure><img src="img/services/service7.png" alt="Sashimi Icon"></figure>
 							<h2>Sashimi</h2>
 							<p>Lorem ipsum dolor sit amet, tetur piscing elit. Suspendisse smod congue bibendum. </p>
 						</div>
@@ -38,7 +50,7 @@ include('partials/header.php')
 					<div class="col-lg-3 col-sm-6 wow fadeInDown" data-wow-delay="0.4s">
 						<a href="catering.php#fried-rice">
 						<div class="service">
-							<figure><img src="img/services/service6.png" alt="Marine Food Services"></figure>
+							<figure><img src="img/services/service6.png" alt="Rice Icon"></figure>
 							<h2>Fried rice</h2>
 							<p>Lorem ipsum dolor sit amet, tetur piscing elit. Suspendisse smod congue bibendum. </p>
 						</div>
@@ -47,7 +59,7 @@ include('partials/header.php')
 					<div class="col-lg-3 col-sm-6 wow fadeInDown" data-wow-delay="0.6s">
 						<a href="catering.php#entree">
 						<div class="service">
-							<figure><img src="img/services/service5.png" alt="Marine Food Services"></figure>
+							<figure><img src="img/services/service6.png" alt="Entree Icon"></figure>
 							<h2>Entree</h2>
 							<p>Lorem ipsum dolor sit amet, tetur piscing elit. Suspendisse smod congue bibendum. </p>
 						</div>

@@ -32,7 +32,7 @@
 		}
 
 		} else {
-			$lang = 'es';
+			$lang = 'en';
 		}
 
 	$_SESSION['lang'] = $lang;

@@ -81,13 +81,9 @@ include('partials/header.php');
 							</div><!-- /food-price -->
 							<ul>
 								<li>
-									<h6><?php echo __('promo-3-title',$lang) ?>ENTIRE ONLINE CHECK</h6>
+									<h6><?php echo __('promo-3-title',$lang) ?></h6>
 									<p><?php echo __('promo-2-desc',$lang) ?>20% off on your entire online check.</p>
-								</li>
-								<li>
 									<p>valid online ordering only, not valid with any other offers, discount, coupons, or lunch special menu discount has not cash value.</p>
-								</li>
-								<li>
 									<p>This offer is not valid on phone order. customer is responsible for all applicable taxes.</p>
 								</li>
 							</ul>

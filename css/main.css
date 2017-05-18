@@ -181,7 +181,7 @@ body{
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #73848e;
+    color: #fff;
     min-width: 360px;
 }
 html.menu-opened,
@@ -199,7 +199,7 @@ p{
     line-height: 1.875em;
 }
 a{
-    color: #23323a;
+    color: #fff;
 }
 a, a:hover, a:focus{
     text-decoration: none;
@@ -216,7 +216,7 @@ section{
     padding-bottom: 110px;
     position: relative;
     z-index: 2;
-    background: white;
+    background: black;
     overflow: hidden;
 }
 section.padding-large{
@@ -578,7 +578,7 @@ form button:hover{
 }
 .section-title{
     text-align: center;
-    color: #23292c;
+    color: #fff;
 }
 .section-title.color-white{
     color: white;
@@ -895,7 +895,7 @@ form button:hover{
     text-transform: uppercase;
     text-align: center;
     color: #000;
-    background: #fce1c1;
+    background: white;
     padding-top: 4px;
     float: left;
     margin-top: 9px;
@@ -2329,6 +2329,10 @@ p.big{
     color: white;
 }
 
+.reservation a:hover, .services a:hover{
+    color: lightyellow;
+}
+
 /**********************************************************************************************
                                     8.2. Services - Media Queries
 ***********************************************************************************************/
@@ -2402,7 +2406,7 @@ p.big{
     margin-bottom: 39px;
 }
 .menus.white-bg .menu .food{
-    color: #23292c;
+    color: #fff;
 }
 .menus .menu .food .food-name{
     font-size: 22px;
@@ -2427,7 +2431,7 @@ p.big{
     background: url(../img/template-assets/dots.png) left 14px repeat-x;
 }
 .menus.white-bg .menu .food .food-desc .dots{
-    background: url(../img/template-assets/dots-dark.png) left bottom 14px repeat-x;
+    background: url(../img/template-assets/dots.png) left bottom 14px repeat-x;
 }
 .menus-full{
     padding-top: 0;
@@ -2457,10 +2461,9 @@ p.big{
     background: transparent;
     width: 300px;
 	height: 360px;
-	border: solid 1px;
     top: 35px !important;
     right: 70px;
-	background: #f5f5f5;
+	background: #cc0011;
 }
 .menus-full .right-section:after{
 	content: '';
@@ -2474,9 +2477,7 @@ p.big{
 	position:relative;
 	right:-23px;
 	top: 193px;
-	border-left: solid 1px;
-	border-top: solid 1px;
-	background: white;
+	background: black;
 }
 .menus-full .left-section .menus-container{
     padding-right: 50px;
@@ -2493,15 +2494,16 @@ p.big{
 }
 .menus-full .menu .section-title p,
 .menus-full .menu .section-title h1{
-    color: #23292c;
+    color: #fff;
 }
 .menus-full .menu .section-title h1{
     line-height: 1.35em;
     margin-bottom: 0;
 }
 .menus-full .menu .section-title p{
-    color: #73848e;
+    color: #c7c7c7;
     margin-top: 10px;
+    line-height: 70%;
 }
 .menus-full .menu .food{
     color: #23292c;
@@ -2546,7 +2548,7 @@ p.big{
 }
 .menus-full .menu-meals-container ul li h3{
     margin-top: 10px;
-    color: #c01;
+    color: #fff;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -2554,7 +2556,7 @@ p.big{
 .menus-full .menu-meals-container ul li p{
     font-size: 14px;
     font-style: italic;
-    color: #73848e;
+    color: #fbc11b;
     line-height: 24px;
 }
 .menus-full .menu-meals-container ul .owl-item.active li h3{
@@ -2842,7 +2844,7 @@ p.big{
     text-transform: none;
 }
 .about .promo{
-    background: #fce1c1;
+    background: white;
     color: #000;
     text-align: center;
     padding-top: 60px;
@@ -5171,11 +5173,11 @@ table.order-table tbody td.total{
     left: 10px;
 }
 .food-banner.style3 .banner .banner-features .banner-features-inner{
-    background: rgba(35, 41, 44, 0.7);
+    background: rgba(216, 0, 29, 0.84);
     border: none;
 }
 .food-banner.style3 .banner .banner-features .food-price{
-    color: white;
+    color: #fbc11b;
     margin-bottom: 20px;
 }
 .food-banner.style3 .banner .banner-features .food-price.first{
@@ -5194,7 +5196,9 @@ table.order-table tbody td.total{
 }
 .food-banner.style3 .banner .banner-features ul li h6,
 .food-banner.style3 .banner .banner-features ul li p{
-    color: #fce1c1;
+    color: #fff;
+    padding-bottom: 6px;
+
 }
 .food-banner.style3 .banner .banner-features ul li h6{
     font-family: 'nevis-Bold', sans-serif;
@@ -5597,70 +5601,19 @@ table.order-table tbody td.total{
     margin-bottom: 85px;
     color: #eae5d6;
 }
-.promo-video{
-    min-height: 460px;
-    overflow: hidden;
-    text-align: center;
-}
-.promo-video .mejs-container{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    display: inline-block;
-    width: 100% !important;
-    height: 100%;
-}
-.promo-video .mejs-container .mejs-overlay.mejs-layer.mejs-overlay-play{
-    width: 100% !important;
-}
-.promo-video .mejs-container .mejs-controls,
-.promo-video .mejs-container .mejs-controls{
-    display: none !important;
-}
-.promo-video .promo-contents{
-    position: relative;
-    z-index: 9999;
-    color: white;
-    padding-top: 70px;
-}
-.promo-video .promo-contents h1{
-    font-family: 'Great Vibes', serif;
-    font-size: 60px;
-    margin-bottom: 10px;
-}
-.promo-video .promo-contents h1 span{
-    color: #e46928;
-}
-.promo-video .promo-contents h6{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
+/**********************************************************************************************
+                                    17.1. PROMO - VIDEO
+***********************************************************************************************/
+
+.promo-video {
+	padding-bottom: 0 !important;
 }
 
-/**********************************************************************************************
-                                    17.1. PROMO - Various Styles
-***********************************************************************************************/
-.promo-video.style2 .promo-contents h1{
-    font-family: 'bebas_neue', sans-serif;
-    font-size: 60px;
-    font-weight: 700;
-    margin-bottom: 19px;
+.promo-video iframe{
+    border: solid 1pt #c01;
 }
-.promo-video.style2 .promo-contents h1 span{
-    color: #c39871;
-}
-.promo-video.style3 .promo-contents h1{
-    font-family: 'nevis-Bold', sans-serif;
-    font-size: 42px;
-    font-weight: 700;
-    margin-bottom: 19px;
-    text-transform: uppercase;
-}
-.promo-video.style3 .promo-contents h1 span{
-    color: #a0bd31;
-}
+
+
 
 /**********************************************************************************************
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -5708,7 +5661,7 @@ table.order-table tbody td.total{
     margin-right: 20px;
 }
 .reservation .reservation-by-phone .contact-info p{
-    color: #23292c;
+    color: #fff;
 }
 .reservation .reservation-by-phone .contact-info .info-container{
     overflow: hidden;
@@ -6062,7 +6015,7 @@ table.order-table tbody td.total{
 ***********************************************************************************************/
 .main-footer{
     background: #23292c;
-    color: #73848e;
+    color: #fff;
 }
 .main-footer .logo-container{
     margin-bottom: 49px;
@@ -6174,7 +6127,7 @@ table.order-table tbody td.total{
     margin-top: 35px;
 }
 .main-footer .bottom-bar{
-    background: #000;
+    background: #212121;
     padding-top: 59px;
     padding-bottom: 47px;
 }
@@ -6899,7 +6852,7 @@ table.order-table tbody td.total{
 
 .navbar-default {
 	height: 82;
-	border-bottom: solid 3px #c01;
+	border-bottom: solid 6px #c01;
 	background: url(../img/custom-bg/navbar.jpg);
 }
 ul.nav.navbar-nav.navbar-right {
@@ -6915,7 +6868,7 @@ nav ul li a.active {
 }
 
 .bottom-bar .links a {
-	color: #73848e;
+	color: #fff;
 }
 
 .bottom-bar .copyright {
@@ -6934,7 +6887,7 @@ ul.list li{
 }
 
 .about.light-bg {
-	background: white;
+	background: black;
 }
 
 .about.light-bg h2{
@@ -6956,11 +6909,11 @@ ul.list li{
 }
 
 .food-banner.dark-bg {
-	background: #fff;
+	background: #000;
 }
 
 .food-banner.light-bg {
-	background: #fff;
+	background: #000;
 }
 
 .food-price .small {
@@ -6974,6 +6927,7 @@ ul.list li{
 
 .food-banner {
 	border-bottom: 1px dashed;
+    color: #fbc11b;
 }
 
 .food-banner:last-of-type {
@@ -6985,7 +6939,7 @@ ul.list li{
 }
 
 .menus .section-title h1 {
-	border-bottom: solid 3px lightgrey;
+	border-bottom: solid 3px #fbc11b;
 }
 
 .catering-nav {
@@ -7034,7 +6988,7 @@ ul.list li{
 }
 
 .separator {
-	border-bottom: solid 3px lightgrey;
+	border-bottom: solid 3px #fbc11b;
 	margin-top: 25px !important;
 	margin-bottom: 25px !important;
 }
