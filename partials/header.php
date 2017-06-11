@@ -172,7 +172,7 @@
 						data-elementdelay="0.5"
 						data-endspeed="600"
 						data-endeasing="Expo.easeInOut">
-						<img src="img/slider-images/organic.png" alt="Organic" class="animateme"
+						<img src="img/logo/slider.png" alt="Organic" class="animateme"
 							data-when="exit"
 							data-from="0"
 							data-to="0.4"
@@ -208,7 +208,7 @@
 						data-start="2000"
 						data-speed="800"
 						data-easing="Power1.easeInOut">
-						<a href="#our-catering" class="custom-button button-style9 animateme"
+						<a href="#our-catering" class="custom-button button-style8 animateme"
                                         data-when="exit"
                                         data-from="0"
                                         data-to="0.6"
@@ -248,7 +248,7 @@
 						data-elementdelay="0.5"
 						data-endspeed="600"
 						data-endeasing="Expo.easeInOut">
-						<img src="img/slider-images/organic.png" alt="Organic" class="animateme"
+						<img src="img/logo/slider.png" alt="Organic" class="animateme"
 							data-when="exit"
 							data-from="0"
 							data-to="0.4"
@@ -284,7 +284,7 @@
 						data-start="2000"
 						data-speed="800"
 						data-easing="Power1.easeInOut">
-						<a href="#our-catering" class="custom-button button-style9 animateme"
+						<a href="#our-catering" class="custom-button button-style8 animateme"
                                         data-when="exit"
                                         data-from="0"
                                         data-to="0.6"
@@ -324,7 +324,7 @@
 						data-elementdelay="0.5"
 						data-endspeed="600"
 						data-endeasing="Expo.easeInOut">
-						<img src="img/slider-images/organic.png" alt="Organic" class="animateme"
+						<img src="img/logo/slider.png" alt="Organic" class="animateme"
 							data-when="exit"
 							data-from="0"
 							data-to="0.4"
@@ -360,7 +360,7 @@
 						data-start="2000"
 						data-speed="800"
 						data-easing="Power1.easeInOut">
-						<a href="#our-catering" class="custom-button button-style9 animateme"
+						<a href="#our-catering" class="custom-button button-style8 animateme"
                                         data-when="exit"
                                         data-from="0"
                                         data-to="0.6"
@@ -380,7 +380,7 @@
 			  <div class="container">
 				<div id="navbar" class="navbar-collapse collapse">
 				  <ul class="nav navbar-nav">
-					<li><a href="/webs/sushirunner"><img src="img/logo/light.png" height="52"></a></li>
+					<li><a href="/"><img src="img/logo/light.jpg" height="52"></a></li>
 				  </ul>
 				  <ul class="nav navbar-nav navbar-right">
 					  <?php echo $menu; ?>

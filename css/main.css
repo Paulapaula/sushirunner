@@ -255,7 +255,8 @@ h5{
     font-size: 16px;
 }
 h6{
-    font-size: 14px;
+    font-size: 22px;
+    line-height: 130%;
 }
 
 form ::-webkit-input-placeholder{
@@ -293,6 +294,7 @@ form textarea{
     transition: all 0.3s ease-in-out;
     background-repeat: no-repeat;
     background-position: 97% center;
+    margin-top: 20px;
 }
 form input,
 form select{
@@ -521,13 +523,14 @@ form button:hover{
     border-color: white;
 }
 .custom-button.button-style8{
-    font-size: 14px;
+font-size: 14px;
     font-weight: 700;
     color: white;
-    background: #c39871;
-    padding: 18px 67px 26px 43px;
-    border: 2px solid white;
-    border-radius: 3px;
+    background: #c01;
+    padding: 15px 25px 20px 28px;
+    border-radius: 7px;
+    border: 2px solid transparent;
+    width: 90px;
 }
 .custom-button.button-style8:hover{
     color: white;
@@ -542,6 +545,7 @@ form button:hover{
     padding: 15px 25px 20px 28px;
     border-radius: 7px;
     border: 2px solid transparent;
+    width: 240px;
 }
 .custom-button.button-style9:hover{
     color: white;
@@ -577,7 +581,7 @@ form button:hover{
     border-color: #c3976f;
 }
 .section-title{
-    text-align: center;
+    text-align: left;
     color: #fff;
 }
 .section-title.color-white{
@@ -623,7 +627,7 @@ form button:hover{
 .section-title.style2 h2 span,
 .section-title.style2 h3 span,
 .section-title.style2 h4 span{
-    color: #bc8b5f;
+    color: #cc0011;
 }
 .dark-bg .section-title h1,
 .dark-bg .section-title p{
@@ -2448,7 +2452,6 @@ p.big{
     padding-right: 0;
     padding-left: 0;
     height: 100%;
-    float: left;
     display: table-cell;
 }
 .menus-full .left-section{
@@ -2805,7 +2808,7 @@ p.big{
     overflow: hidden;
 }
 .about .section-title{
-    margin-bottom: 55px;
+    margin-bottom: 10px;
 }
 .about .about-container{
     margin-bottom: 50px;
@@ -6843,6 +6846,18 @@ table.order-table tbody td.total{
                                     Sushi Custom
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ***********************************************************************************************/
+.password{
+    background: #252525;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.info{
+    margin-top: 30px;
+    margin-bottom: 70px;
+    font-size: 14px;
+    color: #c5c5c5;
+}
 
 #navigation {
 	z-index:99;
@@ -6853,7 +6868,7 @@ table.order-table tbody td.total{
 .navbar-default {
 	height: 82;
 	border-bottom: solid 6px #c01;
-	background: url(../img/custom-bg/navbar.jpg);
+	background: #fff;
 }
 ul.nav.navbar-nav.navbar-right {
     padding-top: 14px;
@@ -6891,8 +6906,8 @@ ul.list li{
 }
 
 .about.light-bg h2{
-	font-family: 'nevis-Bold', sans-serif;
-	color: #000;
+	font-family: 'Inknut Antiqua', serif;
+	color: #c01;
 	font-size: 18pt;
 	line-height: 40pt;
 }
@@ -6987,6 +7002,15 @@ ul.list li{
 	top: -10px;
 }
 
+.link{
+    background: #fbc11b;
+    height: 46px;
+    color: #000 !important;
+    margin-bottom: 15px;
+    padding-top: 9px;
+    padding-left: 436px;
+}
+
 .separator {
 	border-bottom: solid 3px #fbc11b;
 	margin-top: 25px !important;
@@ -7015,6 +7039,12 @@ ul.list li{
     background-color: #f2dede;
 	font-size: 10pt;
 }
+
+.special1{
+    background: url(../img/gallery/50off.jpg);
+    height: 841px;
+}
+
 @media (min-width: 768px){
 	.reservation-by-phone:first-of-type {
 		padding-top: 70px;

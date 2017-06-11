@@ -54,7 +54,7 @@ include('partials/header.php');
                
                 <div class="row">
                     <div class="left-section white-bg">
-                        <div class="col-md-10 pull-right menus-container">
+                        <div class="col-md-5 col-md-offset-3">
                             <div class="menu-carousel">
                                 <div class="menu col-md-12" id="sushi">
                                     <div class="row">
@@ -64,7 +64,10 @@ include('partials/header.php');
                                             </header>
                                         </div><!-- /col-md-8 -->
                                         <div class="col-md-12">
-                                            <div class="food">
+                                            <div class="image" style="margin-bottom: 12px">
+                                                <img src="img/catering/JB_Roll00.jpg">
+                                            </div>
+                                                 <div class="food">
                                                     <div class="food-desc">
                                                         <h6 class="food-name">30 pcs California rolls,<br>20 pcs j& b rolls,<br>20 pcs veggie rolls,<br>10 pcs of mix sushi,<br>20 pcs spicy crab  rolls.</h6>
                                                         <div class="dots"></div>
@@ -111,7 +114,10 @@ include('partials/header.php');
                                             </header>
                                         </div><!-- /col-md-8 -->
                                         <div class="col-md-12">
-                                            <div class="food">
+                                            <div class="image" style="margin-bottom: 12px">
+                                                <img src="img/catering/JB_Roll00.jpg">
+                                            </div>
+                                                <div class="food">
                                                     <div class="food-desc">
                                                         <h6 class="food-name">30 pcs California roll,<br>20 pcs veggie rolls,<br>20 pcs j&b rolls,<br>20 pcs spicy tuna rolls,<br>20 pcs of mix sushi and sashimi.</h6>
                                                         <div class="dots"></div>
@@ -160,6 +166,9 @@ include('partials/header.php');
                                             </header>
                                         </div><!-- /col-md-8 -->
                                         <div class="col-md-12">
+                                            <div class="image" style="margin-bottom: 12px">
+                                                <img src="img/catering/JB_Roll00.jpg">
+                                            </div>
                                             <div class="food">
                                                     <div class="food-desc">
                                                         <h6 class="food-name">Chicken</h6>
@@ -228,6 +237,9 @@ include('partials/header.php');
                                             </header>
                                         </div><!-- /col-md-8 -->
                                         <div class="col-md-12">
+                                          <div class="image" style="margin-bottom: 12px">
+                                                <img src="img/catering/JB_Roll00.jpg">
+                                            </div>
                                            <div class="food">
                                                     <div class="food-desc">
                                                         <h6 class="food-name">Honey garlic chicken</h6>
@@ -337,6 +349,12 @@ include('partials/header.php');
                         </div><!-- /menu-meals-container -->
                     </div><!-- /right-section -->
                 </div><!-- /row -->
+                <div class="col-md-5 col-md-offset-3">
+                    <div class="link">
+                        <a href="https://opendining.net/menu/586d63104f5ee997751e70bb?from_locations=1&appid=58f6cbb84f5ee9bf35fe5a0c#ordering-for-prompt">
+                        <p>Order Now <i class="fa-chevron-right"></i></p>
+                    </div>
+                </div>
             </section><!-- /menu-container -->
 
 <?php include('partials/footer.php') ?>

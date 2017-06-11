@@ -4,15 +4,36 @@ $title = 'Specials';
 include('partials/header.php');
 
 ?>
+
+<div class="special1">
+	<div class="col-md-8">
+		<h1>50<sup>%</sup><sup>off</sup></h1>
+		</div><!-- /food-price -->
+	</div>
+	
+</div>
 <section class="food-banner style3 light-bg"><!--special 1-->
-	<div class="container">
+
+	<h1><?php echo __('promo-1-title',$lang) ?></h1>
+							<p><?php echo __('promo-1-desc',$lang) ?></p>
+<img src="img/gallery/50off.jpg">
 		<div class="row">
 			<div class="wow fadeInLeft">
 				<div class="col-md-8 col-md-offset-2">
-				<div class="banner features-right features-active">
-					<div class="image-container">
-						<img src="img/gallery/gallery49.jpg" alt="Marine Food Banner">
-					</div>
+					<div class="food-price">
+						<p>50<sup>%</sup><sup>off</sup></p>
+					</div><!-- /food-price -->
+					<ul>
+						<li>
+							<h1><?php echo __('promo-1-title',$lang) ?></h1>
+							<p><?php echo __('promo-1-desc',$lang) ?></p>
+						</li>
+					</ul>
+				</div>
+				
+
+					
+
 					<div class="banner-features">
 						<div class="banner-features-inner">
 							<div class="food-price">
@@ -26,11 +47,11 @@ include('partials/header.php');
 							</ul>
 						</div><!-- /banner-features-inner -->
 					</div><!-- /banner-features -->
-				</div><!-- /banner -->
-				</div><!-- /col-md-12 -->
+				
+				
 			</div>
 		</div><!-- /row -->
-	</div><!-- /container -->
+	
 </section><!--/special 1-->
 
 <section class="food-banner style3 dark-bg"><!--special 2-->

@@ -55,7 +55,7 @@ include('partials/header.php');
 		display: block;
 		padding: 15px 20px;
 		text-decoration: none;
-		color: #3B3B3B !important;
+		color: #969696 !important;
 		position: relative;
 		line-height: 110%;
 	}

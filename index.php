@@ -21,52 +21,71 @@ include('partials/header.php')
 	<div class="parallax-bg" data-stellar-background-ratio="0.7"></div>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2 wow fadeInDown">
+			<div class="col-md-12 wow fadeInDown">
 				<header class="section-title style3">
-					<h1><a href="catering.php"><span>Our</span> Catering</a></h1>
-					<p>Aenean sodales dictum augue, in faucibus nisi sollicitudin eu. Nulla semper arcu vel diam auctor. condimentum. Nam molestie sem eu quam fermentum a tempus nisi aliquet.</p>
+					<h1><a href="catering.php"><span>Some</span> Specials</a></h1>
+					<section class="food-banner style3 light-bg"><!--special 1-->
+						<div class="container">
+							<div class="row">
+								<div class="wow fadeInLeft">
+									<div class="col-md-8 col-md-offset-2">
+									<div class="banner features-right features-active">
+										<div class="image-container">
+											<img src="img/gallery/gallery49.jpg" alt="Marine Food Banner">
+										</div>
+										<div class="banner-features">
+											<div class="banner-features-inner">
+												<div class="food-price">
+													<p>50<sup>%</sup><sup>off</sup></p>
+												</div><!-- /food-price -->
+												<ul>
+													<li>
+														<h6><?php echo __('promo-1-title',$lang) ?></h6>
+														<p><?php echo __('promo-1-desc',$lang) ?></p>
+													</li>
+												</ul>
+											</div><!-- /banner-features-inner -->
+										</div><!-- /banner-features -->
+									</div><!-- /banner -->
+									</div><!-- /col-md-12 -->
+								</div>
+							</div><!-- /row -->
+						</div><!-- /container -->
+					</section><!--/special 1-->
+					<section class="food-banner style3 dark-bg"><!--special 2-->
+						<div class="container">
+							<div class="row">
+								<div class="wow fadeInLeft">
+								<div class="col-md-8 col-md-offset-2">
+									<div class="banner features-left features-active">
+										<div class="image-container">
+											<img src="img/gallery/gallery50.jpg" alt="Marine Food Banner">
+										</div>
+										<div class="banner-features">
+											<div class="banner-features-inner">
+												<div class="food-price">
+													<p class="small">Months Special</p>
+												</div><!-- /food-price -->
+												<div class="food-price">
+													<p><sup>$</sup>15</p>
+												</div>
+												<ul>
+													<li>
+														<h6><?php echo __('promo-2-title',$lang) ?></h6>
+														<p><?php echo __('promo-2-desc',$lang) ?></p>
+													</li>
+												</ul>
+											</div><!-- /banner-features-inner -->
+										</div><!-- /banner-features -->
+									</div><!-- /banner -->
+								</div><!-- /col-md-5 -->
+								</div>
+							</div><!-- /row -->
+						</div><!-- /container -->
+					</section><!--/special 2-->
 				</header>
 			</div><!-- /col-md-8 -->
-			<div class="col-md-12">
-				<div class="row">
-					<div class="col-lg-3 col-sm-6 wow fadeInDown">
-						<a href="catering.php#sushi">
-						<div class="service">
-							<figure><img src="img/services/service7.png" alt="Sushi Icon"></figure>
-							<h2>Sushi</h2>
-							<p>Lorem ipsum dolor sit amet, tetur piscing elit. Suspendisse smod congue bibendum. </p>
-						</div>
-						</a>
-					</div><!-- /col-lg-3 -->
-					<div class="col-lg-3 col-sm-6 wow fadeInDown" data-wow-delay="0.2s">
-						<a href="catering.php#sashimi">
-						<div class="service">
-							<figure><img src="img/services/service7.png" alt="Sashimi Icon"></figure>
-							<h2>Sashimi</h2>
-							<p>Lorem ipsum dolor sit amet, tetur piscing elit. Suspendisse smod congue bibendum. </p>
-						</div>
-						</a>
-					</div><!-- /col-lg-3 -->
-					<div class="col-lg-3 col-sm-6 wow fadeInDown" data-wow-delay="0.4s">
-						<a href="catering.php#fried-rice">
-						<div class="service">
-							<figure><img src="img/services/service6.png" alt="Rice Icon"></figure>
-							<h2>Fried rice</h2>
-							<p>Lorem ipsum dolor sit amet, tetur piscing elit. Suspendisse smod congue bibendum. </p>
-						</div>
-						</a>
-					</div><!-- /col-lg-3 -->
-					<div class="col-lg-3 col-sm-6 wow fadeInDown" data-wow-delay="0.6s">
-						<a href="catering.php#entree">
-						<div class="service">
-							<figure><img src="img/services/service6.png" alt="Entree Icon"></figure>
-							<h2>Entree</h2>
-							<p>Lorem ipsum dolor sit amet, tetur piscing elit. Suspendisse smod congue bibendum. </p>
-						</div>
-						</a>
-					</div><!-- /col-lg-3 -->
-				</div><!-- /row -->
-			</div><!-- /services-container -->
+			
 		</div><!-- /row -->
 	</div><!-- /container -->
 </section><!-- /services -->
