@@ -120,7 +120,7 @@
 				if($lang == 'en'){$langOp = 'es';}
 				if($lang == 'es'){$langOp = 'en';}
 				  
-				$menu .= '<li><a href="?lang=' . $langOp . '">' . strtoupper($langOp) . '</a></li>';
+				$menu .= '<li><a href="?lang=' . $langOp . '"><img src="img/lang-' . $lang . '.png" title="'.strtoupper($langOp).'"></a></li>';
 				  
 				echo $menu;
 				  
